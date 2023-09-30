@@ -26,7 +26,7 @@ public class ThreadCooked extends Thread {
 
 	private void Entrega() {
 		if (idPrato % 2 == 0) {
-			System.out.println("A Sopa de Cebola est· sendo entregue.");
+			System.out.println("A Sopa de Cebola est√° sendo entregue.");
 			try {
 				sleep(500);
 				System.out.println("A Sopa de Cebola foi entregue");
@@ -34,7 +34,7 @@ public class ThreadCooked extends Thread {
 				System.err.println(e);
 			}
 		} else {
-			System.out.println("A Lasanha de Bolonhesa est· sendo entregue.");
+			System.out.println("A Lasanha de Bolonhesa est√° sendo entregue.");
 			try {
 				sleep(500);
 				System.out.println("A Lasanha de Bolonhesa foi entregue");
@@ -48,35 +48,35 @@ public class ThreadCooked extends Thread {
 	private void Cozinha() {
 		if (idPrato % 2 == 0) {
 			int random = (int) (Math.random() * 300) + 500;
-			int porcentagem = random / 100;
+			int porcentagem = random / 10;
 			int porcAtual = 0;
-			System.out.println("O cozimento da Sopa de Cebola comeÁou!");
+			System.out.println("O cozimento da Sopa de Cebola come√ßou!");
 			for (int i = 0; i < 10; i++) {
 				try {
 					sleep(porcentagem);
 					porcAtual += 10;
-					System.out.println("A porcentagem para cozimento do prato Sopa de Cebola È de " + porcAtual + "%.");
+					System.out.println("A porcentagem para cozimento do prato Sopa de Cebola √© de " + porcAtual + "%.");
 				} catch (InterruptedException e) {
 					System.err.println(e);
 				}
 			}
-			System.out.println("A Sopa de Cebola est· pronta");
+			System.out.println("A Sopa de Cebola est√° pronta");
 		} else {
 			int random = (int) (Math.random() * 600) + 600;
-			int porcentagem = random / 100;
+			int porcentagem = random / 10;
 			int porcAtual = 0;
-			System.out.println("O cozimento da Lasanha de Bolonhesa comeÁou!");
+			System.out.println("O cozimento da Lasanha de Bolonhesa come√ßou!");
 			for (int i = 0; i < 10; i++) {
 				try {
 					sleep(porcentagem);
 					porcAtual += 10;
 					System.out.println(
-							"A porcentagem para cozimento do prato Lasanha de Bolonhesa È de " + porcAtual + "%.");
+							"A porcentagem para cozimento do prato Lasanha de Bolonhesa √© de " + porcAtual + "%.");
 				} catch (InterruptedException e) {
 					System.err.println(e);
 				}
 			}
-			System.out.println("A Lasanha de Bolonhesa est· pronta.");
+			System.out.println("A Lasanha de Bolonhesa est√° pronta.");
 		}
 
 	}
