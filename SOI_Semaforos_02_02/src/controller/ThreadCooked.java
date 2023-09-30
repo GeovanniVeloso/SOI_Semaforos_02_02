@@ -55,7 +55,7 @@ public class ThreadCooked extends Thread {
 				try {
 					sleep(porcentagem);
 					porcAtual += 10;
-					System.out.println("A porcentagem para cozimento do prato Sopa de Cebola é de " + porcAtual + "%.");
+					System.out.println("A porcentagem do cozimento do prato Sopa de Cebola é de " + porcAtual + "%.");
 				} catch (InterruptedException e) {
 					System.err.println(e);
 				}
@@ -71,7 +71,7 @@ public class ThreadCooked extends Thread {
 					sleep(porcentagem);
 					porcAtual += 10;
 					System.out.println(
-							"A porcentagem para cozimento do prato Lasanha de Bolonhesa é de " + porcAtual + "%.");
+							"A porcentagem do cozimento do prato Lasanha de Bolonhesa é de " + porcAtual + "%.");
 				} catch (InterruptedException e) {
 					System.err.println(e);
 				}
